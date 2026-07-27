@@ -1,6 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     </head>
     <body>
@@ -21,8 +22,10 @@
      bottom: 20px;              /* 下から20pxの位置 */
     left: 50%;                 /* 左右中央に配置 */
     transform: translateX(-50%); /* 中央揃えの微調整 */
-     padding: 15px 30px;        /* ボタンの内側の余白（大きさ） */
-     font-size: 18px;           /* 文字の大きさ */
+     width: 80%;               /* ボタンの横幅を画面の80%に拡大 */
+     max-width: 400px;         /* PCで見た時に大きくなりすぎないように制限 */
+     padding: 20px 0;          /* 上下のタップ範囲をさらに大きく */
+     font-size: 24px;          /* 文字を特大に */
      font-weight: bold;
      box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* 少し影をつける */
      cursor: pointer;
